@@ -10,14 +10,23 @@
 
 var fs = require('fs');
 var Promise = require('bluebird');
-
+// require all the stuff we need from other files
 
 
 var fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
-  // TODO
+  // pluckAsync (readFilePath) - returns username
+    // .then getGithubprofAs - sends request to API
+    // .then (use fs.writefile to save the body text to writeFilePath)
+    // .catch(getstatuscodeAsync)
 };
 
 // Export these functions so we can test them
 module.exports = {
   fetchProfileAndWriteToFile: fetchProfileAndWriteToFile
 };
+
+// getStatusCodeAsync: getStatusCodeAsync,
+// pluckFirstLineFromFileAsync: pluckFirstLineFromFileAsync
+// getGitHubProfileAsync: getGitHubProfileAsync,
+//   generateRandomTokenAsync: generateRandomTokenAsync,
+//   readFileAndMakeItFunnyAsync: readFileAndMakeItFunnyAsync
